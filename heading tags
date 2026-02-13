@@ -1,0 +1,13 @@
+<html>
+ <head>
+ <title>
+ My first Html programe
+ </title>
+ </head>
+ <body>
+  <h1>My first HTML programme</h1>
+  <h2>i stands for Hyper text markup language</h2>
+  <h3>eading tags are used to display titles </h3>
+  <h4>Paragraph tag is used to write an paragraph</h4>
+ </body>
+ </html>         
