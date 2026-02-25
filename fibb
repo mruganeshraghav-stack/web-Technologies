@@ -2,46 +2,88 @@ import java.util.scanner;
 public class {
 public static void main (String args[])
 {
-CalVal cv=new CalVal();
-Scanner scanner = new Scanner(System.in);
-System.out.println("enter your choice 1-fact, 2-fibb,3-fact-rec, 4- fib-rec,0-Exit");
-int  choice = scanner. nextInt ();
-while(choice!=0)
+   CalVal cv=new CalVal();
+   Scanner scanner = new Scanner(System.in);
+   System.out.println("enter your choice 1-fact, 2-fibb,3-fact-rec, 4- fib-rec,0-Exit");
+   int  choice = scanner. nextInt ();
+   while(choice!=0)
 {
-if (choice==1)
+    if (choice==1)
+   {
+   System,out.println("Enter any number to find factorial");
+   int num1 = scanner .nextInt ();
+   cv.fact(num);
+  }
+     if(choice==2)
 {
-System,out.println("Enter any number to find factorial");
-int num1 = scanner .nextInt ();
-cv.fact(num);
+    System.out.println("enter total no of terms");
+    int num1 = scanner.nextInt();
+    cv.fibb(num1);
 }
-if(choice==2)
-{System.out.println("enter total no of terms");
-int num1 = scanner.nextInt();
-cv.fibb(num1);
-}
-if (choice==3)
+    if (choice==3)
 {
-System.out.println("Enter any number to find factorial");
-int num1= scanner .nextInt();
-int result=cv.factRec(num1);
-System.out.println("factorial is"+result");
+     System.out.println("Enter any number to find factorial");
+     int num1= scanner .nextInt();
+     int result=cv.factRec(num1);
+     System.out.println("factorial is"+result");
 }
 if (choice==4)
-{
-System.out.println("enter total no.of terms");
-int num1 =scanner .nextInt();
-System.out.println("fib series is");
-for(int i=0;i<num1;i++)
-System.out.println(" "+ cv.fibbRec(i));
+  {
+    System.out.println("enter total no.of terms");
+    int num1 =scanner .nextInt();
+    System.out.println("fib series is");
+    for(int i=0;i<num1;i++)
+    System.out.println(" "+ cv.fibbRec(i));
+  }
+   System.out.print("do you want to continue(1-y/0-n)");
+   int ch = scanner.nextInt();
+   if (ch==1)
+ {
+    System.out.println("enter your choice 1-fact,2-fibb,3-fact-Rec,4-fibb-Rec ,0-exit");
+   choice = scanner.nextInt();
 }
-System.out.print("do you want to continue(1-y/0-n)");
-int ch = scanner.nextInt();
-if (ch==1)
-{
-system.out.println("enter your choice 1-fact,2-fibb,3-fact-Rec,4-fibb-Rec ,0-exit");
-choice = scanner.nextInt();
-}
-else
-{
+  else
+ {
 break;
+}
+}
+}
+}
+class valcal
+{
+void fact(int n)
+   {
+     int f=1;
+     for(int i=n;i>1;i--)
+    f=f*i;
+    System.out.println("Factorial is "+f);
+}
+void fib(int n)
+{
+       int f=0;
+       int s=1;
+       int sum=0;
+       System.out.println(f+""+s+"");
+       for(int i=3;i<=n;i++)
+{
+     sum=f+s;
+    f=s;
+    System.out.println(sum+" ");
+}
+
+}
+int factRec(int n)
+{
+    if(n==1)
+    return 1;
+   else
+    return n*factRec(n-1);
+}
+    int fibbRec(int n)
+{
+   if(n==0||n==1)
+   return n;
+ else
+return fibbRec(n-1)+fibbRec(n-2);
+}
 }
