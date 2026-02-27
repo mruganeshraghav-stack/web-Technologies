@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>
+KES shroff
+</title>
+</head>
+<body>
+<h1>IT deaprtment</h1>
+<ul>
+<li>BCA</li>
+Faculty name:
+<ol>
+<li>Sanjay Mishra</li>
+<li>Nitish Sir</li>
+<li>Snehalata madam</li>
+<li>Dhanashree madam</li>
+</ol>
+<li>BSC</li>
+Faculty name:
+<ol>
+<li>Sanjay Mishra</li>
+<li>Nitish Sir</li>
+<li>Snehalata madam</li>
+<li>Dhanashree madam</li>
+</ol>
+<li>BDS</li>
+Faculty name:
+<ol>
+<li>Sanjay Mishra</li>
+<li>Nitish Sir</li>
+<li>Snehalata madam</li>
+<li>Dhanashree madam</li>
+</ol>
+</ul>
+<a href="kes2.html">Fianance department</a>
+</body>
+</html>
