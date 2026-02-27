@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Form controls</title>
+</head>
+<body>
+<h1 align="center">FORM</h1>
+<form>
+Username
+<input type="text" length=10>
+<br>
+Password
+<input type="password">
+<br>
+Gender<input type="radio" id="male" name="gender" value="male">MALE<input type="radio" id="female" name="gender" value="female">FEMALE<br>
+Subject<input type="checkbox">Java<input type="checkbox">DS<input type="checkbox">AI<input type="checkbox">HTML
+<br>
+About HTML Form tag<br>
+<input type="submit" value="Submit">
+
+</form>
+</body>
+</html>
